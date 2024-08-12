@@ -13,641 +13,646 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section>
-        <nav>
-            <div class="logo">Shoe<span>s</span></div>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Products">Products</a></li>
-                <li><a href="#Review">Review</a></li>
-                <li><a href="#Servises">Servises</a></li>
-            </ul>
-            <div class="icons">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-user"></i>
-            </div>
-        </nav>
-        <div dir="rtl" id="hamborger-icon">
-            <div class="right-icons">
-                <div class="bar" onclick="togleMobileMonu()">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <div class="phon-icons">
+    <div class="body-container">
+
+        <section>
+            <nav>
+                <div class="logo">Shoe<span>s</span></div>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Products">Products</a></li>
+                    <li><a href="#Review">Review</a></li>
+                    <li><a href="#Servises">Servises</a></li>
+                </ul>
+                <div class="icons">
                     <i class="fa-solid fa-heart"></i>
                     <i class="fa-sharp fa-solid fa-cart-shopping"></i>
                     <i class="fa-solid fa-user"></i>
                 </div>
-            </div>
-            <div>
-                <h2>shoes</h2>
-            </div>
-            <ul id="mobile-menu" class="mobile-monu">
-                <li><a href="#Home">Home <i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="#About">About <i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="#Products">Products <i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="#Review">Review <i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="#Servises">Servises  <i class="fa-solid fa-chevron-right"></i></a></li>
-            </ul>
-        </div>
-        <div class="main">
-            <div class="main-content">
-                <div class="text-content">
-                    <h1>Nike <br><span>Colection</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Ut assumenda accusamus rem, minus sequi cumque saepe dolor
-                         at magni impedit natus error cum iste autem ex nam. Enim, 
-                         dolor maxime!</p>
-                    <div class="button">
-                             <a href="#">Shop Now</a>
-                             <i class="fa-solid fa-chevron-right"></i>
-                     </div>
-                </div>
-                <div class="photo-content">
-                    <img src="image/shoes.png" width="750" height="">
-                </div>
-            </div>
-            <div class="social-icons">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-twitter"></i>
-            </div>
-        </div>
-
-        <script>
-            function togleMobileMonu(){
-                let menuUl = document.getElementById('mobile-menu');
-                let hamborger = document.getElementById('hamborger-icon');
-
-                hamborger.classList.toggle('open')
-                if(hamborger.classList.contains('open')){
-                    document.body.style.overflow = 'hidden';
-                    document.body.style.backgroundColor = 'rgb(169 169 169)'
-                    menuUl.style.transform = 'translateX(0)'                 
-                } else {
-                    document.body.style.overflow = 'auto';
-                    document.body.style.backgroundColor = 'rgb(255 255 255)'
-                    document.body.style.overflowX = 'hidden'
-                    menuUl.style.transform = 'translateX(310px)'                 
-                }
-            }
-        </script>
-    </section>
-
-    <!-- product -->
-
-    <div class="products">
-        <h1>Products</h1>
-        <div class="box">
-            <div class="card">
-                <div class="small-product">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-                <div class="product-image">
-                    <img src="image/shoes8.png"  width="150px" height="135px">
-                </div>
-                <div class="product-text">
-                    <h2>NIKE</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <h3>$119.99</h3>
-                    <div class="product-star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+            </nav>
+            <div dir="rtl" id="hamborger-icon">
+                <div class="right-icons">
+                    <div class="bar" onclick="togleMobileMonu()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </div>
-                    <a class="button-card" href="#">Add To Card</a>
+                    <div class="phon-icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div>
+                    <h2>shoes</h2>
+                </div>
+                <ul id="mobile-menu" class="mobile-monu">
+                    <li><a href="#Home">Home <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="#About">About <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="#Products">Products <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="#Review">Review <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="#Servises">Servises  <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="main-content">
+                    <div class="text-content">
+                        <h1>Nike <br><span>Colection</span></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ut assumenda accusamus rem, minus sequi cumque saepe dolor
+                             at magni impedit natus error cum iste autem ex nam. Enim, 
+                             dolor maxime!</p>
+                        <div class="button">
+                                 <a href="#">Shop Now</a>
+                                 <i class="fa-solid fa-chevron-right"></i>
+                         </div>
+                    </div>
+                    <div class="photo-content">
+                        <img src="image/shoes.png" width="750" height="">
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
-            <div class="card">
-                <div class="small-product">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-                <div class="product-image">
-                    <img src="image/shoes7.png"  width="150px" height="135px">
-                </div>
-                <div class="product-text">
-                    <h2>NIKE</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <h3>$119.99</h3>
-                    <div class="product-star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                    </div>
-                    <a class="button-card" href="#">Add To Card</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="small-product">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-                <div class="product-image">
-                    <img src="image/shoes5.png"  width="150px" height="135px">
-                </div>
-                <div class="product-text">
-                    <h2>NIKE</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <h3>$119.99</h3>
-                    <div class="product-star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                    </div>
-                    <a class="button-card" href="#">Add To Card</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="small-product">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-                <div class="product-image">
-                    <img src="image/shoes6.png"  width="150px" height="135px">
-                </div>
-                <div class="product-text">
-                    <h2>NIKE</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <h3>$119.99</h3>
-                    <div class="product-star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                    </div>
-                    <a class="button-card" href="#">Add To Card</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="small-product">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-                <div class="product-image">
-                    <img src="image/shoes3.png"  width="150px" height="135px">
-                </div>
-                <div class="product-text">
-                    <h2>NIKE</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <h3>$119.99</h3>
-                    <div class="product-star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                    </div>
-                    <a class="button-card" href="#">Add To Card</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="small-product">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-                <div class="product-image">
-                    <img src="image/shoes4.png"  width="150px" height="135px">
-                </div>
-                <div class="product-text">
-                    <h2>NIKE</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <h3>$119.99</h3>
-                    <div class="product-star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                    </div>
-                    <a class="button-card" href="#">Add To Card</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="small-product">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-                <div class="product-image">
-                    <img src="image/shoes2.png"  width="150px" height="135px">
-                </div>
-                <div class="product-text">
-                    <h2>NIKE</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <h3>$119.99</h3>
-                    <div class="product-star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                    </div>
-                    <a class="button-card" href="#">Add To Card</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="small-product">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-share"></i>
-                </div>
-                <div class="product-image">
-                    <img src="image/shoes1.png"  width="150px" height="135px">
-                </div>
-                <div class="product-text">
-                    <h2>NIKE</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <h3>$119.99</h3>
-                    <div class="product-star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                    </div>
-                    <a class="button-card" href="#">Add To Card</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Today Offer -->
-    <div>
-        <h1 class="offer">Today Offer</h1>
-        <div class="product-container">
-            <div class="main-gallery">
-                <div class="gallery">
-                    <img class="glr-img-main" src="nike/bleu/1.jpg" width="450" height="200" id="main-image" >
-                </div>
-                <div class="thumbnail-gallery" id="thumbnail-gallery">
-                    <img class="glr-img" src="nike/bleu/1.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
-                    <img class="glr-img" src="nike/bleu/2.png" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
-                    <img class="glr-img" src="nike/bleu/3.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
-                    <img class="glr-img" src="nike/bleu/4.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
-                    <img class="glr-img" src="nike/bleu/5.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
-                    <img class="glr-img" src="nike/bleu/6.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
-                </div>
-            </div>
-            <div class="product-details">
-                <h1>Air Jordan 1 Low SE <br> <span>Men's Shoes</span></h1>
-                <h2>$81.97 <span class="price">$125</span> <span class="off">34% off</span></h2>
-                <p>The Air Jordan 1 Low SE brings a new twist to a classic silhouette with modern materials and design updates.</p>
-                <div class="color-select" id="colors">
-                        <img src="nike/bleu/1.jpg" onclick="selectColor(this)" id="1" class="color-btn">
-                        <img src="nike/green/1.jpg" onclick="selectColor(this)" id="2" class="color-btn">
-                        <img src="nike/grey/1.jpg" onclick="selectColor(this)" id="3" class="color-btn">
-                    </div>
-                    <div class="size-container">
-                        <div class="size-option-container">
-                            <div class="size-option" onclick="selectSize(this)">M 7 / W 8.5</div>
-                            <div class="size-option" onclick="selectSize(this)">M 7.5 / W 9</div>
-                        </div>
-                        <div class="size-option-container">
-                            <div class="size-option" onclick="selectSize(this)">M 8 / W 9.5</div>
-                            <div class="size-option" onclick="selectSize(this)">M 8.5 / W 10</div>           
-                        </div>
-                        <div class="size-option-container">
-                            <div class="size-option" onclick="selectSize(this)">M 13 / W 14.5</div>
-                            <div class="size-option" onclick="selectSize(this)">M 14 / W 15.5</div>
-                        </div>
-                        <div class="size-option-container">
-                            <div class="size-option" onclick="selectSize(this)">M 12 / W 13.5</div>
-                            <div class="size-option" onclick="selectSize(this)">M 12.5 / W 14</div>     
-                        </div>
-                        <div class="size-option-container">
-                            <div class="size-option" onclick="selectSize(this)">M 11 / W 12.5</div>
-                            <div class="size-option" onclick="selectSize(this)">M 11.5 / W 13</div>
-                        </div>
-                        <div class="size-option-container">
-                            <div class="size-option" onclick="selectSize(this)">M 10 / W 11.5</div>
-                            <div class="size-option" onclick="selectSize(this)">M 10.5 / W 12</div>
-                        </div>
-                        <div class="size-option-container">
-                            <div class="size-option" onclick="selectSize(this)">M 9 / W 10.5</div>
-                            <div class="size-option" onclick="selectSize(this)">M 9.5 / W 11</div>
-                        </div>
-                        <div class="size-option-container">
-                            <div class="size-option" onclick="selectSize(this)">M 17 / W 18.5</div>
-                            <div class="size-option" onclick="selectSize(this)">M 15 / W 16.5</div>
-                        </div>
-                        <div class="size-option-container">
-                            <div class="size-option" onclick="selectSize(this)">M 16 / W 17.5</div>
-                            <div class="size-option" onclick="selectSize(this)">M 18 / W 19.5</div>
-                        </div>
-                    </div>
-                    <div class="btn">
-                        <a href="#">Add to Cart</a>
-                    </div>
-            </div>
-
-            
+    
             <script>
-                function srcCov(img) {
-    
-                    img.style.filter = 'brightness(50%)';
-                    const gallery = document.getElementById("main-image");
-                    gallery.src = img.src;
-                }
-    
-                function resetOpacity(op) {
-                    op.style.filter = 'brightness(100%)';
-                }
-
-                function selectColor(color) {
-                    
-                    // fix border
-                    const colorsElements = document.querySelectorAll(".color-btn");
-                    colorsElements.forEach(el => el.classList.remove('add-border'));
-                    color.classList.add('add-border');
-
-                    //fix colors
-
-                    const element = document.getElementById("thumbnail-gallery");
-                    let images = element.getElementsByTagName('img');
-                    const gallery = document.getElementById("main-image");
-                    gallery.src = color.src;
-                    const green = ["nike/green/1.jpg", "nike/green/2.jpg", "nike/green/3.webp", "nike/green/4.webp", "nike/green/5.webp", "nike/green/6.webp"]
-                    const grey = ["nike/grey/1.jpg", "nike/grey/2.jpg", "nike/grey/3.jpg", "nike/grey/4.jpg", "nike/grey/5.jpg", "nike/grey/6.jpg"]
-                    const bleu = ["nike/bleu/1.jpg", "nike/bleu/2.png", "nike/bleu/3.jpg", "nike/bleu/4.jpg", "nike/bleu/5.jpg", "nike/bleu/6.jpg"]
-                    if(color.src === "http://127.0.0.1:5500/" + "nike/bleu/1.jpg"){
-                        for(let i = 0; i < images.length; i++ ){
-                            images[i].src = "http://127.0.0.1:5500/" + bleu[i];
-                        }
+                function togleMobileMonu(){
+                    let menuUl = document.getElementById('mobile-menu');
+                    let hamborger = document.getElementById('hamborger-icon');
+                    hamborger.classList.toggle('open')
+                    if(hamborger.classList.contains('open')){
+                        console.log("opeeeen")
+                        document.body.style.overflow = 'hidden';
+                        document.body.style.backgroundColor = 'rgb(169 169 169)'
+                        menuUl.style.transform = 'translateX(0)'
+                        // menuUl.style.display = 'block'
+                    } else {
+                        document.body.style.overflow = 'auto';
+                        document.body.style.backgroundColor = 'rgb(255 255 255)'
+                        document.body.style.overflowX = 'hidden'
+                        // menuUl.style.display = 'none'
+                        menuUl.style.transform = 'translateX(310px)'                                
                     }
-                    if(color.src === "http://127.0.0.1:5500/" + "nike/green/1.jpg"){
-                        for(let i = 0; i < images.length; i++ ){
-                            images[i].src = "http://127.0.0.1:5500/" + green[i];
-                        }
-                    }
-                    if(color.src === "http://127.0.0.1:5500/" + "nike/grey/1.jpg"){
-                        for(let i = 0; i < images.length; i++ ){
-                            images[i].src = "http://127.0.0.1:5500/" + grey[i];
-                        }
-                    }
-                }
-
-                function selectSize(size) {
-                    const elements = document.querySelectorAll(".size-option");
-                    elements.forEach(el => el.classList.remove('add-border'));
-                    size.classList.add('add-border');
                 }
             </script>
+        </section>
+    
+        <!-- product -->
+    
+        <div class="products">
+            <h1>Products</h1>
+            <div class="box">
+                <div class="card">
+                    <div class="small-product">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="image/shoes8.png"  width="150px" height="135px">
+                    </div>
+                    <div class="product-text">
+                        <h2>NIKE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>$119.99</h3>
+                        <div class="product-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        </div>
+                        <a class="button-card" href="#">Add To Card</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="small-product">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="image/shoes7.png"  width="150px" height="135px">
+                    </div>
+                    <div class="product-text">
+                        <h2>NIKE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>$119.99</h3>
+                        <div class="product-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        </div>
+                        <a class="button-card" href="#">Add To Card</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="small-product">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="image/shoes5.png"  width="150px" height="135px">
+                    </div>
+                    <div class="product-text">
+                        <h2>NIKE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>$119.99</h3>
+                        <div class="product-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        </div>
+                        <a class="button-card" href="#">Add To Card</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="small-product">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="image/shoes6.png"  width="150px" height="135px">
+                    </div>
+                    <div class="product-text">
+                        <h2>NIKE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>$119.99</h3>
+                        <div class="product-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        </div>
+                        <a class="button-card" href="#">Add To Card</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="small-product">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="image/shoes3.png"  width="150px" height="135px">
+                    </div>
+                    <div class="product-text">
+                        <h2>NIKE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>$119.99</h3>
+                        <div class="product-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        </div>
+                        <a class="button-card" href="#">Add To Card</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="small-product">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="image/shoes4.png"  width="150px" height="135px">
+                    </div>
+                    <div class="product-text">
+                        <h2>NIKE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>$119.99</h3>
+                        <div class="product-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        </div>
+                        <a class="button-card" href="#">Add To Card</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="small-product">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="image/shoes2.png"  width="150px" height="135px">
+                    </div>
+                    <div class="product-text">
+                        <h2>NIKE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>$119.99</h3>
+                        <div class="product-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        </div>
+                        <a class="button-card" href="#">Add To Card</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="small-product">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div class="product-image">
+                        <img src="image/shoes1.png"  width="150px" height="135px">
+                    </div>
+                    <div class="product-text">
+                        <h2>NIKE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>$119.99</h3>
+                        <div class="product-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        </div>
+                        <a class="button-card" href="#">Add To Card</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    
+        <!-- Today Offer -->
+        <div>
+            <h1 class="offer">Today Offer</h1>
+            <div class="product-container">
+                <div class="main-gallery">
+                    <div class="gallery">
+                        <img class="glr-img-main" src="nike/bleu/1.jpg" width="450" height="200" id="main-image" >
+                    </div>
+                    <div class="thumbnail-gallery" id="thumbnail-gallery">
+                        <img class="glr-img" src="nike/bleu/1.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
+                        <img class="glr-img" src="nike/bleu/2.png" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
+                        <img class="glr-img" src="nike/bleu/3.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
+                        <img class="glr-img" src="nike/bleu/4.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
+                        <img class="glr-img" src="nike/bleu/5.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
+                        <img class="glr-img" src="nike/bleu/6.jpg" onmouseover="srcCov(this)"  onmouseout="resetOpacity(this)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>Air Jordan 1 Low SE <br> <span>Men's Shoes</span></h1>
+                    <h2>$81.97 <span class="price">$125</span> <span class="off">34% off</span></h2>
+                    <p>The Air Jordan 1 Low SE brings a new twist to a classic silhouette with modern materials and design updates.</p>
+                    <div class="color-select" id="colors">
+                            <img src="nike/bleu/1.jpg" onclick="selectColor(this)" id="1" class="color-btn">
+                            <img src="nike/green/1.jpg" onclick="selectColor(this)" id="2" class="color-btn">
+                            <img src="nike/grey/1.jpg" onclick="selectColor(this)" id="3" class="color-btn">
+                        </div>
+                        <div class="size-container">
+                            <div class="size-option-container">
+                                <div class="size-option" onclick="selectSize(this)">M 7 / W 8.5</div>
+                                <div class="size-option" onclick="selectSize(this)">M 7.5 / W 9</div>
+                            </div>
+                            <div class="size-option-container">
+                                <div class="size-option" onclick="selectSize(this)">M 8 / W 9.5</div>
+                                <div class="size-option" onclick="selectSize(this)">M 8.5 / W 10</div>           
+                            </div>
+                            <div class="size-option-container">
+                                <div class="size-option" onclick="selectSize(this)">M 13 / W 14.5</div>
+                                <div class="size-option" onclick="selectSize(this)">M 14 / W 15.5</div>
+                            </div>
+                            <div class="size-option-container">
+                                <div class="size-option" onclick="selectSize(this)">M 12 / W 13.5</div>
+                                <div class="size-option" onclick="selectSize(this)">M 12.5 / W 14</div>     
+                            </div>
+                            <div class="size-option-container">
+                                <div class="size-option" onclick="selectSize(this)">M 11 / W 12.5</div>
+                                <div class="size-option" onclick="selectSize(this)">M 11.5 / W 13</div>
+                            </div>
+                            <div class="size-option-container">
+                                <div class="size-option" onclick="selectSize(this)">M 10 / W 11.5</div>
+                                <div class="size-option" onclick="selectSize(this)">M 10.5 / W 12</div>
+                            </div>
+                            <div class="size-option-container">
+                                <div class="size-option" onclick="selectSize(this)">M 9 / W 10.5</div>
+                                <div class="size-option" onclick="selectSize(this)">M 9.5 / W 11</div>
+                            </div>
+                            <div class="size-option-container">
+                                <div class="size-option" onclick="selectSize(this)">M 17 / W 18.5</div>
+                                <div class="size-option" onclick="selectSize(this)">M 15 / W 16.5</div>
+                            </div>
+                            <div class="size-option-container">
+                                <div class="size-option" onclick="selectSize(this)">M 16 / W 17.5</div>
+                                <div class="size-option" onclick="selectSize(this)">M 18 / W 19.5</div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a href="#">Add to Cart</a>
+                        </div>
+                </div>
+    
+                
+                <script>
+                    function srcCov(img) {
+        
+                        img.style.filter = 'brightness(50%)';
+                        const gallery = document.getElementById("main-image");
+                        gallery.src = img.src;
+                    }
+        
+                    function resetOpacity(op) {
+                        op.style.filter = 'brightness(100%)';
+                    }
+    
+                    function selectColor(color) {
+                        
+                        // fix border
+                        const colorsElements = document.querySelectorAll(".color-btn");
+                        colorsElements.forEach(el => el.classList.remove('add-border'));
+                        color.classList.add('add-border');
+    
+                        //fix colors
+    
+                        const element = document.getElementById("thumbnail-gallery");
+                        let images = element.getElementsByTagName('img');
+                        const gallery = document.getElementById("main-image");
+                        gallery.src = color.src;
+                        const green = ["nike/green/1.jpg", "nike/green/2.jpg", "nike/green/3.webp", "nike/green/4.webp", "nike/green/5.webp", "nike/green/6.webp"]
+                        const grey = ["nike/grey/1.jpg", "nike/grey/2.jpg", "nike/grey/3.jpg", "nike/grey/4.jpg", "nike/grey/5.jpg", "nike/grey/6.jpg"]
+                        const bleu = ["nike/bleu/1.jpg", "nike/bleu/2.png", "nike/bleu/3.jpg", "nike/bleu/4.jpg", "nike/bleu/5.jpg", "nike/bleu/6.jpg"]
+                        if(color.src === "http://127.0.0.1:5500/" + "nike/bleu/1.jpg"){
+                            for(let i = 0; i < images.length; i++ ){
+                                images[i].src = "http://127.0.0.1:5500/" + bleu[i];
+                            }
+                        }
+                        if(color.src === "http://127.0.0.1:5500/" + "nike/green/1.jpg"){
+                            for(let i = 0; i < images.length; i++ ){
+                                images[i].src = "http://127.0.0.1:5500/" + green[i];
+                            }
+                        }
+                        if(color.src === "http://127.0.0.1:5500/" + "nike/grey/1.jpg"){
+                            for(let i = 0; i < images.length; i++ ){
+                                images[i].src = "http://127.0.0.1:5500/" + grey[i];
+                            }
+                        }
+                    }
+    
+                    function selectSize(size) {
+                        const elements = document.querySelectorAll(".size-option");
+                        elements.forEach(el => el.classList.remove('add-border'));
+                        size.classList.add('add-border');
+                    }
+                </script>
+            </div>
+        </div>
+    
+        <!-- Review -->
+        <div class="review">
+            <h1>Customer's Review</h1>
+            <div class="review-box">
+                <div class="review-card">
+                    <div class="card-top">
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="image/girl_dp1.jpg">
+                            </div>
+                            <div class="name">
+                                <strong>Winnifred S. Johnson</strong>
+                                <div class="card-start">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commant">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="card-top">
+                        <div class="profile">
+                            <div class="profile-image" >
+                                <img src="image/man_dp1.jpg">
+                            </div>
+                            <div class="name">
+                                <strong>Robert D. Barrios</strong>
+                                <div class="card-start">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commant">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="card-top">
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="image/gir_dp2.jpg">
+                            </div>
+                            <div class="name">
+                                <strong>Clark R. Heller</strong>
+                                <div class="card-start">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commant">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-box">
+                <div class="review-card">
+                    <div class="card-top">
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="image/man_dp2.jpg">
+                            </div>
+                            <div class="name">
+                                <strong>Tammy V. Willis</strong>
+                                <div class="card-start">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commant">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="card-top">
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="image/gir_dp3.jpg">
+                            </div>
+                            <div class="name">
+                                <strong>Michelle D. Jinks</strong>
+                                <div class="card-start">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commant">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="card-top">
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="image/man_dp3.jpg">
+                            </div>
+                            <div class="name">
+                                <strong>Oscar R. Compton</strong>
+                                <div class="card-start">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commant">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- services -->
+    
+        <div class="service">
+            <h1>Our Servises</h1>
+            <div class="service-card">
+                <div class="service-box">
+                    <i class="fa-sharp fa-solid fa-truck-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                    <h3>10 Days Replacement</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>24 x 7 Support</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- login form -->
+    
+        <div class="login-form">
+            <div class="left">
+                <img src="image/logshoes.png">
+            </div>
+            <div class="right">
+                <h2>Welcome back!</h2>
+                <form action="#" method="post">
+                    <p>User name</p>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="user" placeholder="User Name" class="input-style">
+                    </div>
+                    <p>Password</p>
+                    <div class="password">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password" class="input-style">
+                    </div>
+                    <p class="forget-pass">Forget Password ?</p>
+                    <button type="submit">login</button>
+                    <div class="login-icons">
+                        <img src="image/facebook.png" alt="facebook">
+                        <img src="image/google.png" alt="google">
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <!-- footer -->
+        <footer>
+            <div class="main-footer">
+                <div class="tag">
+                    <h1>Contact</h1>
+                    <a href="#"><i class="fa-solid fa-house"></i>2510 Woodland Avenue Metairie</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i>+1-985-664-4176</a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i>contact@gmail.com</a>
+                </div>
+                <div class="tag">
+                    <h1>Get Help</h1>
+                    <a href="#" class="center">FAQ</a>
+                    <a href="#" class="center">Shipping</a>
+                    <a href="#" class="center">Returns</a>
+                    <a href="#" class="center">Payment Options</a>
+                </div>
+                <div class="tag">
+                    <h1>Our Stores</h1>
+                    <a href="#" class="center">Mar</a>
+                    <a href="#" class="center">Usa</a>
+                    <a href="#" class="center">Uk</a>
+                    <a href="#" class="center">China</a>
+                </div>
+                <div id="social-tagg" class="tag">
+                    <h1>Follw Us</h1>
+                    <div class="social-link">
+                        <a href="#" class="facebook"><i class="fa-brands fa-facebook-f" ></i></a>
+                        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="linkeden"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="tumblr"><i class="fa-brands fa-tumblr"></i></a>
+                    </div>
+                </div>
+                <div class="tag">
+                    <h2>Newsletter</h2>
+                    <div class="search-bar">
+                        <input type="email" placeholder="email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const accordiant = document.getElementsByClassName('tag');
+                console.log("accordiant    :   ", accordiant)
+                for(i = 0; i < accordiant.length; i++){
+                    accordiant[i].addEventListener('click', function(){
+                        this.classList.toggle('active');
+                    })
+                }
+            </script>
+        </footer>
     </div>
-
-    <!-- Review -->
-    <div class="review">
-        <h1>Customer's Review</h1>
-        <div class="review-box">
-            <div class="review-card">
-                <div class="card-top">
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="image/girl_dp1.jpg">
-                        </div>
-                        <div class="name">
-                            <strong>Winnifred S. Johnson</strong>
-                            <div class="card-start">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="commant">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="card-top">
-                    <div class="profile">
-                        <div class="profile-image" >
-                            <img src="image/man_dp1.jpg">
-                        </div>
-                        <div class="name">
-                            <strong>Robert D. Barrios</strong>
-                            <div class="card-start">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="commant">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="card-top">
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="image/gir_dp2.jpg">
-                        </div>
-                        <div class="name">
-                            <strong>Clark R. Heller</strong>
-                            <div class="card-start">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="commant">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
-                </div>
-            </div>
-        </div>
-        <div class="review-box">
-            <div class="review-card">
-                <div class="card-top">
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="image/man_dp2.jpg">
-                        </div>
-                        <div class="name">
-                            <strong>Tammy V. Willis</strong>
-                            <div class="card-start">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="commant">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="card-top">
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="image/gir_dp3.jpg">
-                        </div>
-                        <div class="name">
-                            <strong>Michelle D. Jinks</strong>
-                            <div class="card-start">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="commant">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="card-top">
-                    <div class="profile">
-                        <div class="profile-image">
-                            <img src="image/man_dp3.jpg">
-                        </div>
-                        <div class="name">
-                            <strong>Oscar R. Compton</strong>
-                            <div class="card-start">
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="commant">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias aperiam velit vel fugit dolore delectus iure, labore magni explicabo aliquam cum mollitia architecto minima optio tenetur doloremque autem quia?</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- services -->
-
-    <div class="service">
-        <h1>Our Servises</h1>
-        <div class="service-card">
-            <div class="service-box">
-                <i class="fa-sharp fa-solid fa-truck-fast"></i>
-                <h3>Fast Delivery</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="service-box">
-                <i class="fa-solid fa-arrow-rotate-left"></i>
-                <h3>10 Days Replacement</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="service-box">
-                <i class="fa-solid fa-headset"></i>
-                <h3>24 x 7 Support</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- login form -->
-
-    <div class="login-form">
-        <div class="left">
-            <img src="image/logshoes.png">
-        </div>
-        <div class="right">
-            <h2>Welcome back!</h2>
-            <form action="#" method="post">
-                <p>User name</p>
-                <div class="user">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" name="user" placeholder="User Name" class="input-style">
-                </div>
-                <p>Password</p>
-                <div class="password">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" name="password" placeholder="Password" class="input-style">
-                </div>
-                <p class="forget-pass">Forget Password ?</p>
-                <button type="submit">login</button>
-                <div class="login-icons">
-                    <img src="image/facebook.png" alt="facebook">
-                    <img src="image/google.png" alt="google">
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- footer -->
-    <footer>
-        <div class="main-footer">
-            <div class="tag">
-                <h1>Contact</h1>
-                <a href="#"><i class="fa-solid fa-house"></i>2510 Woodland Avenue Metairie</a>
-                <a href="#"><i class="fa-solid fa-phone"></i>+1-985-664-4176</a>
-                <a href="#"><i class="fa-solid fa-envelope"></i>contact@gmail.com</a>
-            </div>
-            <div class="tag">
-                <h1>Get Help</h1>
-                <a href="#" class="center">FAQ</a>
-                <a href="#" class="center">Shipping</a>
-                <a href="#" class="center">Returns</a>
-                <a href="#" class="center">Payment Options</a>
-            </div>
-            <div class="tag">
-                <h1>Our Stores</h1>
-                <a href="#" class="center">Mar</a>
-                <a href="#" class="center">Usa</a>
-                <a href="#" class="center">Uk</a>
-                <a href="#" class="center">China</a>
-            </div>
-            <div id="social-tagg" class="tag">
-                <h1>Follw Us</h1>
-                <div class="social-link">
-                    <a href="#" class="facebook"><i class="fa-brands fa-facebook-f" ></i></a>
-                    <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="linkeden"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="tumblr"><i class="fa-brands fa-tumblr"></i></a>
-                </div>
-            </div>
-            <div class="tag">
-                <h2>Newsletter</h2>
-                <div class="search-bar">
-                    <input type="email" placeholder="email">
-                    <button type="submit">Subscribe</button>
-                </div>
-            </div>
-        </div>
-        <script>
-            const accordiant = document.getElementsByClassName('tag');
-            console.log("accordiant    :   ", accordiant)
-            for(i = 0; i < accordiant.length; i++){
-                accordiant[i].addEventListener('click', function(){
-                    this.classList.toggle('active');
-                })
-            }
-        </script>
-    </footer>
 </body>
 </html>
